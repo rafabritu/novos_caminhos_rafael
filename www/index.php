@@ -7,54 +7,195 @@
     <meta name='robots' content='index, follow'>
     <link rel='shortcut icon' href=''>
     <link rel='stylesheet' href=''>
-    <title>APRENDENDO HTML</title>
+    <title>Site do Curso</title>
 </head>
 
 <body>
-    <h1>França quer imposto para Facebook, Apple, Google e Amazon ainda este ano</h1>
-    <h2>Sem avanços em negociação com a OCDE, França deve retomar cobrança de seu próprio imposto digital sobre gigantes
-        de tecnologia</h2>
-    <p>A França criou em 2019 uma lei para cobrar impostos de empresas digitais como Facebook, Apple, Google e Amazon. A
-        aplicação da taxa foi suspensa por conta de um acordo com outros países, que, em janeiro de 2020, se
-        comprometeram a lançar uma iniciativa conjunta. Insatisfeitos com a falta de avanços, os franceses anunciaram
-        que passarão a cobrar seu imposto já em dezembro.</p>
-    <p>A declaração foi feita nesta quarta-feira (14) pelo ministro das Finanças da França, Bruno Le Maire, que
-        considera uma atuação em conjunto da Europa como ideal. "Ou se aceita a prorrogação por meses, talvez anos, ou
-        se considera que impostos justos sobre atividades digitais são urgentes e, neste caso, a Europa dá o exemplo",
-        afirmou, segundo a Reuters. "Consideramos indispensável que a Europa dê o exemplo e adote a tributação digital o
-        mais rápido possível".</p>
-    <p>Inicialmente, a ideia era criar no segundo semestre de 2020 um imposto único entre os países da OCDE (Organização
-        para a Cooperação e Desenvolvimento Econômico). Nesta semana, no entanto, a entidade anunciou que a proposta não
-        será apresentada no prazo previsto, devendo ficar somente para 2021.</p>
-    <p>Com a cobrança, companhias como Facebook, Apple, Google e Amazon passariam a ser taxadas nos locais em que
-        prestam serviços — hoje a cobrança só acontece onde estão sediadas. Prevendo queda na arrecadação, os Estados
-        Unidos se tornaram os principais críticos da medida e ameaçaram iniciar uma guerra comercial, com aumento de
-        impostos sobre produtos de luxo feitos na França.</p>
-    <h3>União Europeia pode ter imposto digital</h3>
-    <ul>
-        <li>A criação do imposto digital</li>
-        <li>também tem o apoio de Espanha e Itália</li>
-        <ol>
-            <li>além da Comissão Europeia.</li>
-        </ol>
-        <li>Isso pode fazer com que a União Europeia</li>
-        <li>passe à frente da OCDE e volte a discutir</li>
-        <li>sua própria proposta na primeira metade de 2021</li>
-    </ul>
-    <!--<ol reversed> -->
-    <!--<ol start= '3'> -->
-    <!--<ol type'I'> -->
-    <!--<ol type='A'> -->
-    <ol type='a'>
-        <li>Ainda em 2020, o bloco também deve apresentar </li>
-        <ul>
-            <li>propostas para regular gigantes de tecnologia </li>
-        </ul>
-        <li>evitar práticas como o favorecimento de apps</li>
-        <li>das empresas em seus próprios sistemas operacionais.</li>
-    </ol>
+    <!-- CABEÇALHO -->
+    <header>
+        <a href="#">
+            <img src="assets/img/logo.png" alt="Logotipo do curso" title="Logotipo do curso">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#escola">A Escola</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIM CABEÇALHO -->
+    <main>
+        <!-- CHAMADA PRINCIPAL -->
+        <article>
+            <header>
+                <h1>Aqui você aprende o essencial para trabalhar como webmaster fullstack</h1>
+                <p>
+                    Estude o HTML 5 e o CSS 3 na disciplina de webdesign
+                </p>
+                <p>
+                    <a href="#" class="btn">Saiba mais</a>
+                </p>
+            </header>
+        </article>
+        <!-- FIM CHAMADA PRINCIPAL -->
 
-    <a href="http://www.megabyteinfor.site" target="blank" title="Informática" alt="Informática">Megabyte</a>
+        <!-- ARTIGOS -->
+        <section>
+            <header>
+                <h1>
+                    Nossos útimos artigos
+                </h1>
+            </header>
+            <p>
+                Aqui você encontra os artigos necessários para auxiliar na sua caminhada na web
+            </p>
+            <?php
+            for ($i = 0; $i < 12; $i++) : ?>
+            <article>
+                <a href="#">
+                    <img src="assets/img/rede_federal.png" alt="Rede Federal" title="Rede federal">
+                </a>
+                <p>Categoria</p>
+                <h2>
+                    Aperiam necessitatibus voluptatibus. Aliquid repellat sit. Nisi autem quis quas. Modi dicta nemo
+                    aliquam ipsam sint sit est consequuntur.
+                </h2>
+            </article>
+            <?php endfor; ?>
+        </section>
+        <!-- FIM ARTIGOS -->
+
+        <!-- NEWS -->
+        <article>
+            <header>
+                <h1>Quer receber todas as novidades em seu e-mail ?</h1>
+                <p>
+                    Informe seu nome e e-mail no campo ao lado e clique em OK !
+                </p>
+            </header>
+            <form action="" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <button type="submit">OK !</button>
+            </form>
+
+        </article>
+        <!-- FIM NEWS -->
+
+        <!-- SOBRE O CURSO -->
+        <section>
+            <header>
+                <img src='assets/img/logo.png' alt='' title=''>
+                <h1>Curso de Programação WEB</h1>
+                <p>
+                    Aprenda a trabalhar com HTML5 e CSS3 para desenvolver seus projetos
+                    e entregar páginas que estejam dentro dos padrões
+                    web seguindo boas práticas de programação
+                </p>
+            </header>
+            <?php
+            $vantagens = [
+                "Curso 100% Online",
+                "Suporte Especializado",
+                "As aulas são divididas em módulos",
+                "Certificado reconhecido em todo o território nacional",
+                "Veja aqui alguns comentários dos nossos alunos",
+            ];
+            $descricao = [
+                "Todas as aulas são gravadas e focadas na prática",
+                "Este curso possui suporte diretamento com um profissional da
+                da nossa equipe oficial",
+                "A modularização que você precisa para compreender de maneira mais objetiva",
+                "Ao concluir o curso você receberá um certificado federal com reconhecimento
+                em todo o território nacional",
+                "Veja o que estão falando sobre o curso",
+
+            ];
+            ?>
+
+            <?php for ($i = 0; $i < 4; $i++) : ?>
+
+            <article>
+                <header>
+                    <h2>
+                        <?= $vantagens[$i] ?>
+                    </h2>
+                </header>
+                <p>
+                    <?= $descricao[$i] ?>
+                </p>
+            </article>
+
+            <?php endfor; ?>
+
+            <section>
+                <header>
+                    <h2>Veja o que estão falando sobre o curso</h2>
+                </header>
+
+                <article>
+                    <header>
+                        <h3>Aline Figueiredo de Araujo(Ponto Positivo)</h3>
+                        <p>
+                            O curso visa capacitação para atuação em uma área
+                            com crescente requisição pelo mercado de trabalho
+                        </p>
+                    </header>
+                </article>
+                <article>
+                    <header>
+                        <h3>Aline Figueiredo de Araujo(Ponto Negativo)</h3>
+                        <p>
+                            Falta um material didático com conceitos básicos do
+                            curso e que detalhe cada comando utilizado,
+                            especificando a finalidade da utilização
+                        </p>
+                    </header>
+                </article>
+                <article>
+                    <header>
+                        <h3>André Martins (Ponto Positivo)</h3>
+                        <p>
+                            É gratuito, e também a distância
+                        </p>
+                    </header>
+                </article>
+                <article>
+                    <header>
+                        <h3>André Martins (Ponto Negativo)</h3>
+                        <p>
+                            Quem não tem nenhum conhecimento de "GIT" encontrará
+                            dificuldades no início
+                        </p>
+                    </header>
+                </article>
+                <article>
+                    <header>
+                        <h3>Felipe S. da Silva (Ponto Positivo)</h3>
+                        <p>
+                            Foco maior na prática e exigências do mercado
+                        </p>
+                    </header>
+                </article>
+                <article>
+                    <header>
+                        <h3>Felipe S. da Silva (Ponto Negativo)</h3>
+                        <p>
+                            O prazo do curso é muito curto
+                        </p>
+                    </header>
+                </article>
+            </section>
+        </section>
+
+        <!-- FIM SOBRE O CURSO -->
+    </main>
+
+    <footer>
+    </footer>
+
     <script> </script>
 </body>
 
