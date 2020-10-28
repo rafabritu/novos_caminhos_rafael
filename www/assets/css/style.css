@@ -1,0 +1,33 @@
+/* SINTAXE
+IDENTIFICADOR SELETOR{
+    PROPRIEDADE: VALOR;
+} */
+
+/* IDENTIFICADORES
+. = CLASSE
+# = ID
+p = Usando a própria tag */
+
+/* SELETOR
+- ELEMENTOS DO HTML (P H1 H2 ...) */
+
+/* PROPRIEDADE
+color, text, border, margin, padding, font
+*/
+
+/* VALOR
+green, blue, left, right, 100px */
+
+/* .btn {
+    color: sienna;
+} */
+
+/* #titulo {
+    color: #ccc;
+} */
+
+p {
+    color: green;
+    text-align: center;
+    font-size: 1em; /*100% da fonte padrão do dispositivo */
+}
