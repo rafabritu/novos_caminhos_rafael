@@ -26,8 +26,208 @@ green, blue, left, right, 100px */
     color: #ccc;
 } */
 
-p {
-    color: green;
+/* p {
+    color: gray;
     text-align: center;
-    font-size: 1em; /*100% da fonte padrão do dispositivo */
+    font-size: 1em;
+} */
+
+/* article p {
+    color: red;
+    text-align: center;
+    font-size: 1.1em;
+} */
+
+/* .main_blog {
+    color: green;
+    background-color: #ccc;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.main_blog p {
+    color: blue;
+    text-align: center;
+    font-size: 1.1em;
+} */
+
+/* .main_blog {
+    width: 800px;
+    background-color: #ccc;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.main_blog article {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin: 20px 0;
+}
+.main_blog article h3 {
+    color: yellow !important; 
+}  */
+
+/* Para larguras o ideal é usar as porcentagens e os em para textos, para ser responsivo */
+
+/* .main_blog {
+    max-width: 1000px;
+    width: 96%;
+    background-color: #ccc;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.main_blog article {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin: 20px 0;
+}
+.main_blog article h3 {
+    color: yellow !important;
+}
+.main_blog article p {
+    font-size: 1.2em;
+} */
+
+/* .main_blog {
+    max-width: calc(1000px - 80px);
+    width: calc(96% - 80px);
+    background-color: #ccc;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.main_blog article {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin: 20px 0;
+}
+.main_blog article h3 {
+    color: yellow !important;
+}
+.main_blog article p {
+    font-size: 1.2em;
+} */
+
+/* .main_blog {
+    max-width: calc(1000px - 80px);
+    width: calc(96% - 80px);
+    background-color: #ccc;
+    padding: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_blog header {
+    flex-basis: 100%;
+}
+
+.main_blog article {
+    flex-basis: calc(50% - 40px - 20px);
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin: 20px 0;
+}
+.main_blog article h3 {
+    color: yellow !important;
+}
+.main_blog article p {
+    font-size: 1.2em;
+}
+
+@media (max-width: 640px) {
+    .main_blog article {
+        flex-basis: calc(100% - 40px);
+    }
+}
+/* Para modificar o css quando a tela estiver menor */
+
+.main_blog {
+    max-width: calc(1000px - 80px);
+    width: calc(96% - 80px);
+    background-color: #ccc;
+    padding: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_blog header {
+    flex-basis: 100%;
+}
+
+.main_blog article {
+    flex-basis: calc(50% - 40px - 20px);
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    margin: 20px 0;
+}
+.main_blog article h3 {
+    color: yellow;
+}
+.main_blog article p {
+    font-size: 1.1em;
+}
+
+.title_medium_lightray {
+    color: lightgray !important;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.radius {
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+.btn {
+    padding: 8px 10px;
+    font-weight: normal;
+    margin: 0px 4px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn_green {
+    background-color: #009933;
+    color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn_green:hover {
+    background-color: #00cc66;
+}
+
+.btn_red {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn_red:hover {
+    background-color: #ff3300;
+}
+
+@media (max-width: 640px) {
+    .main_blog article {
+        flex-basis: calc(100% - 40px);
+    }
 }
