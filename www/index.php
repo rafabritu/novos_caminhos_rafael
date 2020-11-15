@@ -16,63 +16,69 @@
 
 <body>
     <!-- CABEÇALHO -->
-    <header>
-        <a href="#">
-            <img src="assets/img/logo.png" alt="Logotipo do curso" title="Logotipo do curso">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#escola">A Escola</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="main_header">
+        <div class="main_header_content">
+            <a href="#" class="logo">
+                <img src="assets/img/logo.png" alt="Logotipo do curso" title="Logotipo do curso">
+            </a>
+            <nav class="main_header_content_menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#escola">A Escola</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- FIM CABEÇALHO -->
     <main>
         <!-- CHAMADA PRINCIPAL -->
-        <article>
-            <header>
-                <h1>Aqui você aprende o essencial para trabalhar como webmaster fullstack</h1>
-                <p>
-                    Estude o HTML 5 e o CSS 3 na disciplina de webdesign
-                </p>
-                <p>
-                    <a href="#" class="btn">Saiba mais</a>
-                </p>
-            </header>
-        </article>
+        <div class="main_cta">
+            <article class="main_cta_content">
+                <header>
+                    <h1>Aqui você aprende o essencial para trabalhar como webmaster fullstack</h1>
+                    <p>
+                        Estude o HTML 5 e o CSS 3 na disciplina de webdesign
+                    </p>
+                    <p>
+                        <a href="#" class="btn">Saiba mais</a>
+                    </p>
+                </header>
+            </article>
+        </div>
         <!-- FIM CHAMADA PRINCIPAL -->
 
         <!-- ARTIGOS -->
-        <section>
+        <section class="main_blog">
             <header>
-                <h1>
-                    Nossos útimos artigos
+                <h1 class="icon-blog">
+                    Nossos últimos artigos
                 </h1>
+                <p>
+                    Aqui você encontra os artigos necessários para auxiliar na sua caminhada na web
+                </p>
             </header>
-            <p>
-                Aqui você encontra os artigos necessários para auxiliar na sua caminhada na web
-            </p>
             <?php
             for ($i = 0; $i < 12; $i++) : ?>
-            <article>
-                <a href="#">
-                    <img src="assets/img/rede_federal.png" alt="Rede Federal" title="Rede federal">
-                </a>
-                <p>Categoria</p>
-                <h2>
-                    Aperiam necessitatibus voluptatibus. Aliquid repellat sit. Nisi autem quis quas. Modi dicta nemo
-                    aliquam ipsam sint sit est consequuntur.
-                </h2>
-            </article>
+                <article>
+                    <a href="#">
+                        <img src="assets/img/rede_federal2.jpg" alt="Rede Federal" title="Rede federal">
+                    </a>
+                    <a href="" class="category">Categoria</a>
+                    <a href="">
+                        <h2 class="title">
+                            Aperiam necessitatibus voluptatibus. Aliquid repellat sit. Nisi autem quis quas. Modi dicta nemo
+                            aliquam ipsam sint sit est consequuntur.
+                        </h2>
+                    </a>
+                </article>
             <?php endfor; ?>
         </section>
         <!-- FIM ARTIGOS -->
 
         <!-- NEWS -->
-        <article>
+        <article class="news">
             <header>
                 <h1>Quer receber todas as novidades em seu e-mail ?</h1>
                 <p>
@@ -121,16 +127,16 @@
 
             <?php for ($i = 0; $i < 4; $i++) : ?>
 
-            <article>
-                <header>
-                    <h2>
-                        <?= $vantagens[$i] ?>
-                    </h2>
-                </header>
-                <p>
-                    <?= $descricao[$i] ?>
-                </p>
-            </article>
+                <article>
+                    <header>
+                        <h2>
+                            <?= $vantagens[$i] ?>
+                        </h2>
+                    </header>
+                    <p>
+                        <?= $descricao[$i] ?>
+                    </p>
+                </article>
 
             <?php endfor; ?>
 
@@ -241,13 +247,13 @@
 
                 <?php foreach ($cursos as $key => $value) : ?>
 
-                <article>
-                    <header>
-                        <h3>
-                            <?= $value ?>
-                        </h3>
-                    </header>
-                </article>
+                    <article>
+                        <header>
+                            <h3>
+                                <?= $value ?>
+                            </h3>
+                        </header>
+                    </article>
 
                 <?php endforeach; ?>
 
